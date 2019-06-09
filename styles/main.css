@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 4vw;
     background-color: white;
 }
 
@@ -46,13 +47,13 @@ input, textarea {
     top: 0;
     left: 0;
     right: 0;
-    height: 64px;
+    height: 2em;
     z-index: 100;
     transition: 0.3s ease;
 }
 
 .nav .default-nav {
-    height: 64px;
+    height: 3em;
     width: 100%;
     position: absolute;
     left: 0;
@@ -69,7 +70,7 @@ input, textarea {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 64px;
+    height: 2em;
     top: 0;
     margin: 0;
     padding: 0;
@@ -78,11 +79,11 @@ input, textarea {
 }
 
 .nav .default-nav .main-nav .navicon {
-    font-size: 28px;
-    height: 32px;
-    width: 32px;
+    font-size: 2em;
+    height: 2em;
+    width: 2em;
     background-size: contain;
-    margin: 16px;
+    margin: auto;
     float: left;
 }
 
@@ -105,7 +106,7 @@ input, textarea {
 }
 
 .nav .default-nav .main-nav .main-nav-item {
-    font-size: 16pt;
+    font-size: 2em;
     float: left;
     height: 64px;
     margin-right: 50px;
@@ -124,6 +125,13 @@ input, textarea {
     text-decoration: none;
     color: inherit;
     transition: 0.3s ease;
+}
+
+.action_button {
+    display: block; margin: 0 auto;
+    font-size: 1.5em;
+    width: 80%;
+    height: 20%;
 }
 
 @media (orientation: portrait) {
