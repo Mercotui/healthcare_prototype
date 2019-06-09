@@ -126,7 +126,7 @@ input, textarea {
     transition: 0.3s ease;
 }
 
-@media (max-width: 560px) {
+@media (orientation: portrait) {
     .wrapper {
         width: 100%;
         height: 100%;
