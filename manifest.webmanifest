@@ -1,7 +1,7 @@
 {
   "background_color": "#0000d6",
   "description": "Mictie Informatie & Dagboek",
-  "display": "fullscreen",
+  "display": "standalone",
   "icons": [
     {
       "src": "resources/icon.png",

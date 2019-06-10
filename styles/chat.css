@@ -4,7 +4,7 @@
 }
 
 .chatpage-content {
-    padding: 10.6666666667px;
+    padding: 1em;
     position: relative;
     margin-bottom: 5em;
     height: 100%;
@@ -16,6 +16,7 @@
     left: 0;
     right: 0;
     height: 4em;
+    width: 100%;
     background: #ffffff;
     /* box-shadow: 0px -3px 3px 0px rgba(50, 50, 50, 0.1); */
 }
@@ -29,10 +30,10 @@
     position: absolute;
     left: 0;
     top: 0;
-    padding: 0 5%;
+    padding: 0 1em;
     resize: none;
     overflow: scroll;
-    padding-top: 2em;
+    padding-top: 1.5em;
     font-weight: 300;
     -ms-overflow-style: none;
     overflow: auto;
