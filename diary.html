@@ -28,18 +28,27 @@
                 </div>
             </header>
             <div class="content mdc-top-app-bar--fixed-adjust">
-                <button type="button" name="button_info" onclick="window.location='./info.html'" style="display: block;"><i class="fas fa-plus"></i>Activiteit Toevoegen</button>
-
-                <div class="mdc-switch mdc-switch--disabled">
-                    <div class="mdc-switch__track"></div>
-                    <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" role="switch" disabled>
+                <button type="button" name="button_info"  class="mdc-button action_button">
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
+                    <span class="mdc-button__label">
+                        Activiteit Toevoegen
+                    </span>
+                 </button>
+                 <div style="width: 100%; margin: 1em auto; text-align: center;">
+                    <div class="mdc-switch mdc-switch--checked" style="display: inline-block;">
+                        <div class="mdc-switch__track"></div>
+                        <div class="mdc-switch__thumb-underlay">
+                            <div class="mdc-switch__thumb">
+                                <input type="checkbox" id="share-switch" class="mdc-switch__native-control" role="switch" value="true">
+                            </div>
                         </div>
                     </div>
+                    <label for="share-switch" style="padding-left: 1em; display: inline-block;">Delen met zorgverlener</label>
                 </div>
-                <label for="another-basic-switch">off/on</label>
             </div>
+            <script type="text/javascript">
+                const switchControl = new mdc.switchControl.MDCSwitch(document.querySelector('.mdc-switch'));
+            </script>
         </div>
     </div>
 </body>
