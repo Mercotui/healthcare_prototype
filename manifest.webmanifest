@@ -1,0 +1,15 @@
+{
+  "background_color": "#0000d6",
+  "description": "Mictie Informatie & Dagboek",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "resources/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Mictie Tracker",
+  "short_name": "Mictie",
+  "start_url": "index.html"
+}

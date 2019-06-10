@@ -21,7 +21,7 @@
 }
 
 .bottom .input {
-    font-size: 12pt;
+    font-size: 1em;
     height: 4em;
     background: #ffffff;
     border: none;
@@ -32,7 +32,7 @@
     padding: 0 5%;
     resize: none;
     overflow: scroll;
-    padding-top: 24px;
+    padding-top: 2em;
     font-weight: 300;
     -ms-overflow-style: none;
     overflow: auto;
@@ -61,7 +61,7 @@
 .bottom .send:before {
     content: '';
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/ic_send_white_48dp.png) no-repeat center center;
-    background-size: 25.6px;
+    background-size: 2em;
     position: absolute;
     top: 0;
     left: 0;
@@ -81,8 +81,8 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin: 10.6666666667px 0;
-    padding: 10.6666666667px 0;
+    margin: 1em 0;
+    padding: 1em 0;
 }
 
 .message-wrapper .circle-wrapper {
@@ -92,10 +92,10 @@
 }
 
 .message-wrapper .text-wrapper {
-    padding: 10.6666666667px;
-    min-height: 42.6666666667px;
+    padding: 1em;
+    min-height: 2em;
     width: 60%;
-    margin: 0 10.6666666667px;
+    margin: 0 1em;
     box-shadow: 0px 1px 0px 0px rgba(50, 50, 50, 0.3);
     border-radius: 2px;
     font-weight: 300;
