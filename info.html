@@ -1,37 +1,96 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Informatie - Gezondheidsappje</title>
 
-        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/animate.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <nav class="nav" id="nav">
-                <div class="default-nav">
-                    <div class="main-nav">
-                        <div class="navicon" onclick="window.location='./index.html'"><i class="fas fa-arrow-left"></i></div>
-                        <div class="main-nav-item"><a class="main-nav-item-link">Informatie</a></div>
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <title>Informatie - Mictie Tracker</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="inner" id="inner">
+            <header class="mdc-top-app-bar">
+                <div class="mdc-top-app-bar__row">
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        <a href="index.html" class="material-icons mdc-top-app-bar__navigation-icon">arrow_back</a>
+                        <span class="mdc-top-app-bar__title">Informatie</span>
+                    </section>
                 </div>
-            </nav>
-            <div class="inner" id="inner">
-                <p class="content" style="margin: 1em;">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </header>
+            <div class="content text_container mdc-top-app-bar--fixed-adjust">
+                <p>
+                    Bron: NHG standaard voor urine incontinentie bij vrouwen
                 </p>
-                <p class="content" style="margin: 1em;">
-                    Gemaakt door <a href="https://github.com/mercotui/">@mercotui<a> in 2019, MIT License.
+                <h3>
+                    Begrippen
+                </h3>
+                <p>
+                    Incontinentie voor urine</b> iedere vorm van ongewild urineverlies.
+                </p>
+                <p>
+                    <b>Stressincontinentie (inspanningsincontinentie)</b>
+                    urine-incontinentie zonder aandrang, die optreedt bij intra-abdominale drukverhoging, zoals bij sporten, niezen of hoesten.<br /><br />
+                </p>
+                <p>
+                    <b>Urgency-incontinentie (aandrangincontinentie)</b>
+                    urine-incontinentie die samengaat met of direct wordt voorafgegaan door een plotselinge onbedwingbare aandrang om te plassen (urgency).
+                </p>
+                <p>
+                    <b>Gemengde incontinentie</b> urine-incontinentie met zowel kenmerken van stress- als van urgency-incontinentie.
+                </p>
+
+                <p>
+                    <b>Het overactieveblaassyndroom</b>
+                    syndroom van klachten van plotselinge onbedwingbare aandrang om te plassen,
+                    vaak in combinatie met een toegenomen mictiefrequentie en nycturie.
+                    Incontinentie is geen verplicht verschijnsel.
+                    Oorzaken zoals een urineweginfectie dienen te zijn uitgesloten.
+                </p>
+
+                <h3>
+                    Epidemiologie
+                </h3>
+                <p>
+                    Urine-incontinentie komt – afhankelijk van de gehanteerde definitie – voor bij een kwart tot ruim de helft van alle volwassen vrouwen.
+                    De prevalentie neemt toe met het stijgen van de leeftijd.
+                    In de loop van een zwangerschap wordt eenderde van de vrouwen incontinent.
+                    Een half jaar na de bevalling is bij meer dan de helft van deze vrouwen spontaan herstel opgetreden.
+                    Ongeveer eenderde van alle vrouwen met incontinentie voor urine heeft ooit professionele hulp gezocht.
+                </p>
+                <p>
+                    Bij vrouwen jonger dan vijftig jaar is stressincontinentie de meestvoorkomende vorm;
+                    bij oudere vrouwen gaat het vaker om urgency-incontinentie of gemengde incontinentie.
+                </p>
+                <h3>
+                    Fysiologie
+                </h3>
+                <p>
+                    Bij vrouwen wordt de blaas afgesloten door circulair dwarsgestreept spierweefsel in de urethrawand en de bekkenbodemspieren. De bekkenbodem spant bij intra-abdominale drukverhoging, zoals bij hoesten, aan om urineverlies te
+                    voorkómen. Bij de mictie, defecatie en de coïtus ontspant de bekkenbodem. Bij een gemiddelde vochtinname is de normale mictiefrequentie ongeveer 6 tot 8 keer per 24 uur. De eerste mictiedrang ontstaat wanneer de blaas gevuld is met
+                    150 tot 200 ml urine. Normaliter wordt de aandrang beheerst tot men zich in gepaste omstandigheden bevindt om te plassen. Ter beheersing van de aandrang activeert het sympathisch zenuwstelsel de sfincter van de urethra en de
+                    bekkenbodemspieren en ontspant de in de blaaswand gelegen spier (de m. detrusor). Tijdens de mictiefase ontstaat op basis van afferente signalen naar de hersenen een mictiecommando vanuit de motorische hersenschors. Dit commando
+                    verloopt vervolgens via het mictiecentrum in de pons naar kernen in het sacrale merg en de nn. pudendi, waar het leidt tot relaxatie van de sfincter van de urethra en bekkenbodemspieren. Hierop volgt reflectoir via de
+                    parasympathische kernen een contractie van de m. detrusor, die bij voldoende contractiliteit zorgt voor een residuloze mictie. Via het limbische systeem kunnen ook emotionele factoren en gedragsinvloeden de m. detrusor stimuleren en
+                    remmen.
+                </p>
+                <h3>
+                    Applicatie
+                </h3>
+                <p>
+                    Gemaakt door <a href="https://github.com/mercotui/">@mercotui</a> in 2019, MIT License.
                 </p>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

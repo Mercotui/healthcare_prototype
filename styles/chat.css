@@ -1,11 +1,13 @@
 .chatpage{
-    overflow: scroll;
+    height: 100%;
+    overflow-y: scroll;
 }
 
-.wrapper .inner .content {
+.chatpage-content {
     padding: 10.6666666667px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 5em;
+    height: 100%;
 }
 
 .bottom {
@@ -13,17 +15,17 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 64px;
+    height: 4em;
     background: #ffffff;
     /* box-shadow: 0px -3px 3px 0px rgba(50, 50, 50, 0.1); */
 }
 
 .bottom .input {
     font-size: 12pt;
-    height: 64px;
+    height: 4em;
     background: #ffffff;
     border: none;
-    width: calc(100% - 64px);
+    width: calc(100% - 4em);
     position: absolute;
     left: 0;
     top: 0;
@@ -46,14 +48,14 @@
 
 .bottom .send {
     position: fixed;
-    height: 42.6666666667px;
-    width: 42.6666666667px;
+    height: 3em;
+    width: 3em;
     border-radius: 50%;
     border: 0;
-    background: #C6002B;
+    background: #75e900;
     color: #ffffff;
-    bottom: 10.6666666667px;
-    right: 10.6666666667px;
+    bottom: .5em;
+    right: .5em;
 }
 
 .bottom .send:before {
@@ -110,21 +112,21 @@
 }
 
 .message-wrapper.them .circle-wrapper, .message-wrapper.them .text-wrapper {
-    background: #C6002B;
+    background: #0000d6;
     float: left;
     color: #ffffff;
 }
 
 .message-wrapper.them .text-wrapper:before {
     border-width: 0 10px 10px 0;
-    border-color: transparent #C6002B transparent transparent;
+    border-color: transparent #0000d6 transparent transparent;
     position: absolute;
     top: 0;
     left: -9px;
 }
 
 .message-wrapper.me .circle-wrapper, .message-wrapper.me .text-wrapper {
-    background: #00C69B;
+    background: #75e900;
     float: right;
     color: #333333;
 }

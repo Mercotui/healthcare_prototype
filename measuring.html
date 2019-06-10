@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Meten - Gezondheidsappje</title>
 
-        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/animate.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <nav class="nav" id="nav">
-                <div class="default-nav">
-                    <div class="main-nav">
-                        <div class="navicon" onclick="window.location='./index.html'"><i class="fas fa-arrow-left"></i></div>
-                            <div class="main-nav-item">Meten</div>
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <title>Meten - Mictie Tracker</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="inner" id="inner">
+            <header class="mdc-top-app-bar">
+                <div class="mdc-top-app-bar__row">
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        <a href="index.html" class="material-icons mdc-top-app-bar__navigation-icon">arrow_back</a>
+                        <span class="mdc-top-app-bar__title">Meten</span>
+                    </section>
                 </div>
-            </nav>
-            <div class="inner" id="inner">
-                <button type="button" name="button_search" onclick="window.location='./diary.html'">Mictiedagboek</button>
-                <button type="button">Nulmeting</button>
-                <button type="button">Oefeningen</button>
+            </header>
+            <div class="content mdc-top-app-bar--fixed-adjust">
+                <button class="mdc-button action_button" type="button" name="button_search" onclick="window.location='./diary.html'">Mictiedagboek</button>
+                <button class="mdc-button action_button" type="button">Nulmeting</button>
+                <button class="mdc-button action_button" type="button">Oefeningen</button>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

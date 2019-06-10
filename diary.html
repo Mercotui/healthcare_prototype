@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Dagboek - Gezondheidsappje</title>
 
-        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/animate.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <nav class="nav" id="nav">
-                <div class="default-nav">
-                    <div class="main-nav">
-                        <div class="navicon"><i class="fas fa-medkit"></i></div>
-                        <div class="main-nav-item"><a class="main-nav-item-link">Mictiedagboek</a></div>
+<head>
+    <meta charset="utf-8">
+    <title>Dagboek - Mictie Tracker</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="inner" id="inner" style="margin: auto;">
+            <header class="mdc-top-app-bar">
+                <div class="mdc-top-app-bar__row">
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        <a href="index.html" class="material-icons mdc-top-app-bar__navigation-icon">arrow_back</a>
+                        <span class="mdc-top-app-bar__title">Dagboek</span>
+                    </section>
+                </div>
+            </header>
+            <div class="content mdc-top-app-bar--fixed-adjust">
+                <button type="button" name="button_info" onclick="window.location='./info.html'" style="display: block;"><i class="fas fa-plus"></i>Activiteit Toevoegen</button>
+
+                <div class="mdc-switch mdc-switch--disabled">
+                    <div class="mdc-switch__track"></div>
+                    <div class="mdc-switch__thumb-underlay">
+                        <div class="mdc-switch__thumb">
+                            <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" role="switch" disabled>
+                        </div>
                     </div>
                 </div>
-            </nav>
-            <div class="inner" id="inner" style="margin: auto;">
-                <button type="button" name="button_info" onclick="window.location='./info.html'" style="display: block;"><i class="fas fa-plus"></i>Activiteit Toevoegen</button>
+                <label for="another-basic-switch">off/on</label>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>

@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Gezondheidsappje</title>
 
-        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/animate.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <nav class="nav" id="nav">
-                <div class="default-nav">
-                    <div class="main-nav">
-                        <div class="navicon"><i class="fas fa-medkit"></i></div>
-                        <div class="main-nav-item"><a class="main-nav-item-link">Gezondheidsappje</a></div>
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <title>Mictie Tracker</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="inner" id="inner">
+            <header class="mdc-top-app-bar">
+                <div class="mdc-top-app-bar__row">
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        <span class="mdc-top-app-bar__navigation-icon"><i class="fas fa-medkit"></i></span>
+                        <span class="mdc-top-app-bar__title">Mictie Tracker</span>
+                    </section>
                 </div>
-            </nav>
-            <div class="inner" id="inner" style="">
-                <button type="button" class="action_button" name="button_info" onclick="window.location='./info.html'">Informatie</button>
-                <button type="button" class="action_button" name="button_chat" onclick="window.location='./chat.html'">Chatten</button>
-                <button type="button" class="action_button" name="button_search" onclick="window.location='./search.html'">Zorgverlener Zoeken</button>
-                <button type="button" class="action_button" name="button_measure" onclick="window.location='./measuring.html'">Meten</button>
+            </header>
+            <div class="content mdc-top-app-bar--fixed-adjust">
+                <button type="button" class="mdc-button action_button" name="button_measure" onclick="window.location='measuring.html'">Meten</button>
+                <button type="button" class="mdc-button action_button" name="button_info">Leefregels</button>
+                <button type="button" class="mdc-button action_button" name="button_info" onclick="window.location='info.html'">Informatie</button>
+                <button type="button" class="mdc-button action_button" name="button_chat" onclick="window.location='chat.html'">Chatten</button>
+                <button type="button" class="mdc-button action_button" name="button_search" onclick="window.location='search.html'">Zorgverlener Zoeken</button>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

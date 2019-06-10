@@ -1,10 +1,9 @@
-* {
-    box-sizing: border-box;
-}
+/* *{border: 1px solid red} */
 
 body {
+    --mdc-theme-primary: #0000d6;
+    --mdc-theme-secondary: #75e900;
     font-family: 'Roboto', sans-serif;
-    font-size: 4vw;
     background-color: white;
 }
 
@@ -12,19 +11,13 @@ input, textarea {
     font-family: 'Roboto', sans-serif;
 }
 
-.title {
-    color: #ffffff;
-    text-align: center;
-    font-weight: 100;
-}
-
 .wrapper {
-    height: 520px;
-    width: 320px;
+    height: 100%;
+    width: 50vh;
     overflow: hidden;
     background-color: white;
     position: fixed;
-    top: 100px;
+    top: 0px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -33,8 +26,8 @@ input, textarea {
 }
 
 .wrapper .inner {
-    height: 520px;
-    padding-top: 64px;
+    height: 100%;
+    width: 100%;
     background: #f2f2f2;
 }
 
@@ -42,96 +35,30 @@ input, textarea {
     width: 0 !important;
 }
 
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2em;
-    z-index: 100;
-    transition: 0.3s ease;
-}
-
-.nav .default-nav {
-    height: 3em;
+.content {
+    box-sizing: border-box;
+    background: #f2f2f2;
+    height: 100%;
     width: 100%;
     position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 110;
-    background-color: #C6002B;
-    border-bottom: 3px solid #ea1c0d;
-    color: #ffffff;
-    box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.1);
-    transition: 0.3s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.nav .default-nav .main-nav {
-    position: absolute;
-    left: 0;
+.text_container{
     width: 100%;
-    height: 2em;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    transition: 0.3s ease;
-}
-
-.nav .default-nav .main-nav .navicon {
-    font-size: 2em;
-    height: 2em;
-    width: 2em;
-    background-size: contain;
-    margin: auto;
-    float: left;
-}
-
-.nav .default-nav .main-nav .navicon:hover {
-    cursor: pointer;
-}
-
-.nav .default-nav .main-nav .options {
-    height: 32px;
-    width: 32px;
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/ic_more_vert_white_48dp.png);
-    background-size: contain;
-    margin: 16px;
-    position: absolute;
-    right: 0;
-}
-
-.nav .default-nav .main-nav .options:hover {
-    cursor: pointer;
-}
-
-.nav .default-nav .main-nav .main-nav-item {
-    font-size: 2em;
-    float: left;
-    height: 64px;
-    margin-right: 50px;
-    position: relative;
-    line-height: 64px;
-    transition: 0.3s ease;
-}
-
-.nav .default-nav .main-nav .main-nav-item .main-nav-item-link {
-    display: block;
-    position: relative;
-    height: 64px;
-    width: 100%;
-    text-align: center;
-    line-height: 64px;
-    text-decoration: none;
-    color: inherit;
-    transition: 0.3s ease;
+    height: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .action_button {
-    display: block; margin: 0 auto;
+    display: block;
+    margin: 0 auto;
     font-size: 1.5em;
     width: 80%;
-    height: 20%;
+    height: 3em;
+    margin-top: 1em;
 }
 
 @media (orientation: portrait) {
