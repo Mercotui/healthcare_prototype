@@ -1,9 +1,4 @@
 /* *{border: 1px solid red} */
-
-:root {
-    font-size: 3vh;
-}
-
 body {
     --mdc-theme-primary: #0000d6;
     --mdc-theme-secondary: #75e900;
