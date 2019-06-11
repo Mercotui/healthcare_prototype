@@ -17,22 +17,40 @@
     </head>
     <body>
         <div class="wrapper">
+            <div class="inner" id="inner">
             <header class="mdc-top-app-bar">
               <div class="mdc-top-app-bar__row">
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                  <a href="index.html" class="material-icons mdc-top-app-bar__navigation-icon">arrow_back</a>
+                    <a href="index.html" class="material-icons mdc-top-app-bar__navigation-icon">arrow_back</a>
                   <span class="mdc-top-app-bar__title">Zorgverlener Zoeken</span>
                 </section>
               </div>
-            </header
-            <div class="inner" id="inner">
-                <button type="button" name="button_chat" onclick="window.location='./chat.html'">Chatten</button>
-                <button type="button" name="button_search" onclick="window.location='./search.html'">Zorgverlener Zoeken</button>
-                <div class="bottom" id="bottom">
-                    <textarea class="input" id="input"></textarea>
-                    <div class="send" id="send"><i class="fas fa-search"></i></div>
+            </header>
+            <div class="content mdc-top-app-bar--fixed-adjust">
+                <div class="mdc-text-field action_button" id="postcode-field-container">
+                    <input type="text" id="postcode-field" class="mdc-text-field__input">
+                    <label class="mdc-floating-label" for="my-text-field">Postcode</label>
+                    <div class="mdc-line-ripple"></div>
                 </div>
+
+                <div class="mdc-text-field action_button" id="type-field-container">
+                    <input type="text" id="type-field" class="mdc-text-field__input">
+                    <label class="mdc-floating-label" for="my-text-field">Zorgverlener Soort</label>
+                    <div class="mdc-line-ripple"></div>
+                </div>
+
+                <button type="button" name="button_info"  class="mdc-button action_button">
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">search</i>
+                    <span class="mdc-button__label">
+                        Zoeken
+                    </span>
+                 </button>
             </div>
+            <script type="text/javascript">
+            const postcode_field = new mdc.textField.MDCTextField(document.getElementById('postcode-field-container'));
+            const type_field = new mdc.textField.MDCTextField(document.getElementById('type-field-container'));
+            </script>
+        </div>
         </div>
     </body>
 </html>
